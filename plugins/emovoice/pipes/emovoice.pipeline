@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<pipeline ssi-v="1">
+
+	<register>
+		<load name="ssiaudio.dll"/>
+		<load name="ssiemovoice.dll"/>
+		<load name="ssiioput.dll"/>		
+		<load name="ssigraphic.dll"/>
+		<load name="ssisignal.dll"/>
+		<load name="ssimodel.dll"/>
+	</register>	
+	
+	<!-- set framework options -->
+	<framework console="true" cpos="400,400,400,400"/>
+	
+	<!-- set painter options -->
+	<painter arrange="true" apos="1,2,0,0,400,800"/>
+
+	<!-- sensor -->
+	<sensor create="ssi_sensor_Audio" option="audio" scale="true">
+		<provider channel="audio" pin="audio"/>		
+	</sensor>
+	
+	<!-- voice activity detection -->
+	<transformer create="ssi_feature_AudioActivity" method="0" threshold="0.05">
+		<input pin="audio" frame="0.03s" delta="0.015s"/>
+		<output pin="audio_vad"/>
+	</transformer>
+	<consumer create="ssi_consumer_ZeroEventSender" mindur="1.0" hangin="3" hangout="10" ename="speech">
+		<input pin="audio_vad" frame="0.1s"/>		
+	</consumer>
+	
+	<!-- emo voice classifier -->
+	<consumer create="ssi_consumer_Classifier" trainer="emovoice">
+		<input pin="audio" listen="speech@">
+			<transformer create="ssi_feature_EmoVoiceFeat" maj="1"/>
+		</input>
+	</consumer>
+
+	<!-- visualization -->
+	<consumer create="ssi_consumer_SignalPainter" name="audio (tr)" type="2">
+		<input pin="audio" listen="speech@"/>
+	</consumer>
+	<consumer create="ssi_consumer_SignalPainter" name="audio" size="10.0" type="2">
+		<input pin="audio" frame="0.2s"/>
+	</consumer>
+	
+	<!-- listener -->
+	<listener create="ssi_listener_EventMonitor" mpos="400,0,400,400">
+		<input listen="@" span="20000" />
+	</listener>		
+	
+</pipeline>

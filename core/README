@@ -1,0 +1,35 @@
+------------------------------------------------------------
+	Core // Social Signal Interpretation (SSI)
+------------------------------------------------------------
+
+(c) 2007-14 University of Augsburg
+	Lab for Human Centered Multimedia
+	support@openssi.net
+	http://openssi.net	 
+
+	Published under GNU Lesser General Public License
+	see also LICENSE
+	
+------------------------------------------------------------
+	Credits
+------------------------------------------------------------
+
+	oscpack -- Open Sound Control packet manipulation library
+	http://www.audiomulch.com/~rossb/code/oscpack	
+	see also LICENSE.OSCPACK
+
+	TinyXML -- a simple, small, C++ XML parser
+	copyright (c) 2000-2006 Lee Thomason (www.grinninglizard.com)
+	see also LICENSE.TINYXML
+
+	r250, Random number generator by Taygeta
+	http://www.taygeta.com/
+
+	C++ class for JPEG decompression, Rich Geldreich <richgel99@gmail.com>
+	http://code.google.com/p/jpeg-compressor/
+	Public domain
+	
+------------------------------------------------------------
+	Bug report to support@openssi.net
+------------------------------------------------------------
+
