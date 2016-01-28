@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<options>
+    <item name="sname" type="CHAR" num="1024" value="mouse" help="name of sender" />
+    <item name="ename" type="CHAR" num="1024" value="string" help="name of event" />
+    <item name="mean" type="BOOL" num="1" value="false" help="send mean values" />
+    <item name="buffer" type="UINT" num="1" value="2048" help="size of string buffer" />
+    <item name="delim" type="CHAR" num="1" value=";" help="row delimiter" />
+</options>

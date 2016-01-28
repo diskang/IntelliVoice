@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<options>
+    <item name="mybools" type="BOOL" num="5" value="false,true,false,true,false" help="this is my bool array" />
+    <item name="myints" type="INT" num="5" value="1,2,3,4,5" help="this is my int array" />
+    <item name="myuints" type="UINT" num="5" value="1,2,3,4,5" help="this is my uint array" />
+    <item name="myfloats" type="FLOAT" num="5" value="1.000000e+00,2.000000e+00,3.000000e+00,4.000000e+00,5.000000e+00" help="this is my float array" />
+    <item name="mydoubles" type="DOUBLE" num="5" value="1.000000e+00,2.000000e+00,3.000000e+00,4.000000e+00,5.000000e+00" help="this is my double array" />
+    <item name="mychar" type="CHAR" num="1" value="c" help="this is my char" />
+    <item name="myuchar" type="UCHAR" num="1" value="123" help="this is my unsigned char" />
+    <item name="mystring" type="CHAR" num="256" value="mystring" help="this is my string" />
+</options>

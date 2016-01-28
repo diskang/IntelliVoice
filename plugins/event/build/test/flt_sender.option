@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<options>
+    <item name="sname" type="CHAR" num="1024" value="mouse" help="name of sender" />
+    <item name="ename" type="CHAR" num="1024" value="position" help="name of event" />
+    <item name="mean" type="BOOL" num="1" value="true" help="send mean values" />
+    <item name="valchanges" type="BOOL" num="1" value="false" help="send events only on value changes" />
+</options>

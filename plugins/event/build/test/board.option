@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<options>
+    <item name="n_events" type="UINT" num="1" value="1024" help="maximal # of buffered events" />
+    <item name="n_listener" type="UINT" num="1" value="64" help="maximal # of listener" />
+    <item name="n_sender" type="UINT" num="1" value="64" help="maximal # of sender" />
+    <item name="update" type="UINT" num="1" value="100" help="update interval in milliseconds" />
+</options>

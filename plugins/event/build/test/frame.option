@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<options>
+    <item name="countdown" type="UINT" num="1" value="3" help="countdown in seconds before framework is started" />
+    <item name="console" type="BOOL" num="1" value="false" help="move console window" />
+    <item name="cpos" type="INT" num="4" value="0,0,400,400" help="position of console window on screen [posx,posy,width,height]" />
+    <item name="monitor" type="BOOL" num="1" value="false" help="show framework monitor" />
+    <item name="mpos" type="INT" num="4" value="0,0,400,400" help="position of monitor on screen [posx,posy,width,height]" />
+    <item name="mupd" type="UINT" num="1" value="100" help="monitor update frequency in milliseconds" />
+    <item name="sync" type="BOOL" num="1" value="false" help="turn on sync mode: if not in listen mode send sync signal containing the framework UTC start time in a SYSTEMTIME struct, otherwise wait for such a signal" />
+    <item name="slisten" type="BOOL" num="1" value="false" help="serve as client, i.e. wait for sync signal by server (only if sync option is turned on)" />
+    <item name="sport" type="INT" num="1" value="1111" help="sync port number (-1 for any)" />
+    <item name="stype" type="UCHAR" num="1" value="0" help="sync protocol type (0=UDP, 1=TCP)" />
+    <item name="tserver" type="BOOL" num="1" value="false" help="start time server (waits for a TCP connection and returns current framework UTC time in a in a SYSTEMTIME struct)" />
+    <item name="tport" type="INT" num="1" value="2222" help="time server listening port" />
+    <item name="info" type="BOOL" num="1" value="true" help="create framework info file" />
+    <item name="loglevel" type="INT" num="1" value="2" help="log level (0=error only, 1=warnings, 2=basic, 3=detailed, 4=debug, 5=verbose" />
+</options>

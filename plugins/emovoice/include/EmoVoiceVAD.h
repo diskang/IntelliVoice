@@ -46,8 +46,12 @@ class EmoVoiceVAD : public ITransformer {
 
 public:
 
-	EmoVoiceVAD ();
-	virtual ~EmoVoiceVAD ();
+	static const ssi_char_t *GetCreateName() { return "ssi_transformer_EmoVoiceVAD";}
+	static IObject *Create(const ssi_char_t *file) { return new EmoVoiceVAD(); };
+	IOptions *getOptions() { return 0; };
+	~EmoVoiceVAD();
+	const ssi_char_t *getName() { return GetCreateName(); };
+	const ssi_char_t *getInfo() { return "VAD calculation"; };
 
 	ssi_size_t getSampleDimensionOut (ssi_size_t sample_dimension_in);
 	ssi_size_t getSampleNumberOut (ssi_size_t sample_number_in);
@@ -61,6 +65,7 @@ public:
 		ssi_stream_t xtra_stream_in[] = 0);
 
 protected:
+	EmoVoiceVAD();
 
 	int steps, in_cols;
 	dsp_vad_t  *vad;

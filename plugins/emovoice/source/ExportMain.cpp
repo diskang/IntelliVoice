@@ -49,6 +49,6 @@ DLLEXP bool Register (ssi::Factory *factory, FILE *logfile, ssi::IMessage *messa
 	result = ssi::Factory::Register (ssi::EmoVoiceFeat::GetCreateName (), ssi::EmoVoiceFeat::Create) && result;
 	result = ssi::Factory::Register (ssi::EmoVoiceMFCC::GetCreateName (), ssi::EmoVoiceMFCC::Create) && result;
 	result = ssi::Factory::Register (ssi::EmoVoicePitch::GetCreateName (), ssi::EmoVoicePitch::Create) && result;
-	
+	result = ssi::Factory::Register(ssi::EmoVoiceVAD::GetCreateName(), ssi::EmoVoiceVAD::Create) && result;
 	return result;
 }

@@ -1,0 +1,22 @@
+# Classifier type:	naive_bayes
+# number of classes	feature space dimension
+4	2
+
+# class	prior class probability
+# mean	standard deviation
+class00	0.25
+0.304638	0.211706
+0.282628	0.175695
+
+class01	0.25
+0.268348	0.188543
+0.601166	0.176246
+
+class02	0.25
+0.611723	0.198192
+0.242999	0.172834
+
+class03	0.25
+0.551622	0.166777
+0.563049	0.178228
+

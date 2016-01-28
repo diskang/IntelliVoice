@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<trainer ssi-v="5">
+    <info trained="true" />
+    <streams>
+        <item byte="4" dim="2" sr="10.000000" type="FLOAT" />
+    </streams>
+    <classes>
+        <item name="class00" />
+        <item name="class01" />
+        <item name="class02" />
+        <item name="class03" />
+    </classes>
+    <users>
+        <item name="user" />
+    </users>
+    <model create="ssi_model_EmoVoiceBayes" stream="0" path="Bayes.trainer.ssi_model_EmoVoiceBayes" help="Naive Bayes Classifier" />
+</trainer>

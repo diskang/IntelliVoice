@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<options>
+    <item name="sname" type="CHAR" num="1024" value="mouse" help="name of sender" />
+    <item name="ename" type="CHAR" num="1024" value="features" help="name of event" />
+    <item name="mean" type="BOOL" num="1" value="true" help="add mean value" />
+    <item name="var" type="BOOL" num="1" value="true" help="add variance value" />
+    <item name="min" type="BOOL" num="1" value="true" help="add minimum value" />
+    <item name="max" type="BOOL" num="1" value="true" help="add maximum value" />
+</options>
